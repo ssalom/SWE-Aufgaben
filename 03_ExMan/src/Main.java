@@ -4,11 +4,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
-
         menuAusgabe(true);
         userMenuInput();
-
     }
 
     private static void menuAusgabe (boolean init) {
