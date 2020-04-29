@@ -1,3 +1,5 @@
+import ch.abbts.model.*;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,9 +11,11 @@ public class Main {
         System.out.println(touch1.getName() + "ist am Port " + touch1.getPort());
         System.out.println(touch2.getName() + "ist am Port " + touch2.getPort());
 
+        System.out.println(touch1.isPressed());
+        System.out.println(touch2.isPressed());
 
-
-
-
+        System.out.println("Vor Pressed...");
+        touch1.waitForPressed();
+        System.out.println("Nach Pressed...");
     }
 }

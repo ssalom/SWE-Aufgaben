@@ -1,3 +1,5 @@
+import ch.abbts.model.*;
+
 public class TouchSensor {
     String name;
     int port;
@@ -5,6 +7,16 @@ public class TouchSensor {
     public TouchSensor(String name, int port) {
         this.name = name;
         this.port = port;
+    }
+
+    boolean isPressed() {
+        return Model.in.isPressed(this.port);
+    }
+
+    void waitForPressed() {
+        while (!isPressed()) {
+            Util.delay(100);
+        }
     }
 
     public String getName() {
