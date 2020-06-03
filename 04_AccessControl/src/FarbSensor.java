@@ -1,27 +1,16 @@
-import ch.abbts.model.*;
-
-class TouchSensor {
+public class FarbSensor {
     private String name;
     private int port;
+    private String color;
 
-    public TouchSensor(String name, int port) {
+    public FarbSensor(String name, int port, String color) {
         setName(name);
         setPort(port);
+        setColor(color);
     }
 
-    private boolean isPressed() {
-        return Model.in.isPressed(this.port);
-    }
-
-    public void waitForPressed() {
-        while (!isPressed()) {
-            Util.delay(100);
-        }
-    }
-
-
-    public String toString() {
-        return this.getName() + "  am Port " + this.getPort();
+    public void colorToString () {
+        System.out.println(this.getName() + "  am Port " + this.getPort());
     }
 
     public String getName() {
@@ -43,5 +32,13 @@ class TouchSensor {
             System.out.println(port + " ungültige Portnummer");
             System.exit(1);
         }
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }

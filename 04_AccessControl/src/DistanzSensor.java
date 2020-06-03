@@ -1,27 +1,16 @@
-import ch.abbts.model.*;
-
-class TouchSensor {
+public class DistanzSensor {
     private String name;
     private int port;
+    private double distance;
 
-    public TouchSensor(String name, int port) {
+    public DistanzSensor(String name, int port, double distance) {
         setName(name);
         setPort(port);
+        setDistance(distance);
     }
 
-    private boolean isPressed() {
-        return Model.in.isPressed(this.port);
-    }
-
-    public void waitForPressed() {
-        while (!isPressed()) {
-            Util.delay(100);
-        }
-    }
-
-
-    public String toString() {
-        return this.getName() + "  am Port " + this.getPort();
+    public void distanceToString() {
+        System.out.println(this.getName() + "  am Port " + this.getPort() + " hat die Distanz " + this.getDistance());
     }
 
     public String getName() {
@@ -43,5 +32,13 @@ class TouchSensor {
             System.out.println(port + " ungültige Portnummer");
             System.exit(1);
         }
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public void setDistance(double distance) {
+        this.distance = distance;
     }
 }

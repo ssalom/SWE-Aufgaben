@@ -1,27 +1,16 @@
-import ch.abbts.model.*;
-
-class TouchSensor {
+public class Motor {
     private String name;
     private int port;
+    private int drehmoment;
 
-    public TouchSensor(String name, int port) {
+    public Motor(String name, int port, int drehmoment) {
         setName(name);
         setPort(port);
+        setDrehmoment(drehmoment);
     }
 
-    private boolean isPressed() {
-        return Model.in.isPressed(this.port);
-    }
-
-    public void waitForPressed() {
-        while (!isPressed()) {
-            Util.delay(100);
-        }
-    }
-
-
-    public String toString() {
-        return this.getName() + "  am Port " + this.getPort();
+    public void motorToString () {
+        System.out.println(this.getName() + "  am Port " + this.getPort() + " un ddreht mit einem drehmoment von " + this.getDrehmoment());
     }
 
     public String getName() {
@@ -43,5 +32,13 @@ class TouchSensor {
             System.out.println(port + " ungültige Portnummer");
             System.exit(1);
         }
+    }
+
+    public int getDrehmoment() {
+        return drehmoment;
+    }
+
+    public void setDrehmoment(int drehmoment) {
+        this.drehmoment = drehmoment;
     }
 }

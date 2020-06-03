@@ -38,7 +38,7 @@ public class RaumUndZeit {
 
     public static void aufgabe3 () {
         int sekunden = 5000;
-        int miliSekunden = sekunden * 60;
+        int miliSekunden = sekunden * 1000;
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
         Date date = new Date();
 
