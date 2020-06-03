@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00b8748b-0c89-4e9c-9327-9e00500f64fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../05_Tranings-Serie-B/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_Tranings-Serie-B/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_Tranings-Serie-B/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_Tranings-Serie-B/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_Tranings-Serie-B/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_Tranings-Serie-B/05_Tranings-Serie-B.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_Tranings-Serie-B/src/Ort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_Tranings-Serie-B/src/TestKlasse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05_Tranings-Serie-B/src/Zeit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HundeDressur6_Methodenaufrufe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/swe-ssa.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Tranings-Serie-A/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02_Tranings-Serie-A/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Tranings-Serie-A/out/production/02_Tranings-Serie-A/RaumUndZeit.class" beforeDir="false" afterPath="$PROJECT_DIR$/../02_Tranings-Serie-A/out/production/02_Tranings-Serie-A/RaumUndZeit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Tranings-Serie-A/src/RaumUndZeit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02_Tranings-Serie-A/src/RaumUndZeit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_AccessControl/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../04_AccessControl/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_AccessControl/out/production/01_AccessControl/DistanzSensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../04_AccessControl/out/production/01_AccessControl/DistanzSensor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_AccessControl/out/production/01_AccessControl/FarbSensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../04_AccessControl/out/production/01_AccessControl/FarbSensor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_AccessControl/out/production/01_AccessControl/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../04_AccessControl/out/production/01_AccessControl/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_AccessControl/out/production/01_AccessControl/Motor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../04_AccessControl/out/production/01_AccessControl/Motor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_AccessControl/out/production/01_AccessControl/TouchSensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../04_AccessControl/out/production/01_AccessControl/TouchSensor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_AccessControl/src/DistanzSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04_AccessControl/src/DistanzSensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_AccessControl/src/FarbSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04_AccessControl/src/FarbSensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_AccessControl/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04_AccessControl/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_AccessControl/src/Motor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04_AccessControl/src/Motor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_AccessControl/src/TouchSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../04_AccessControl/src/TouchSensor.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1az6SmmlvwlAXhF1VdiMSZMmp6Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="HundeDressur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="14" />
+      <option name="MAIN_CLASS_NAME" value="HundeDressur" />
+      <module name="HundeDressur6_Methodenaufrufe" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HundeDressur" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00b8748b-0c89-4e9c-9327-9e00500f64fc" name="Default Changelist" comment="" />
+      <created>1587726076328</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587726076328</updated>
+      <workItem from="1589375023954" duration="589000" />
+      <workItem from="1589375625438" duration="1158000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="93" key="#Project_Structure" timestamp="1589375071273">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="93" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589375071273" />
+    <state x="414" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589375117929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589375117929" />
+    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1589375284696">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589375284696" />
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1589377956613">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589377956613" />
+    <state width="958" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.605.1366.768@0.0.1920.1040" timestamp="1587726293793" />
+    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1589377956613">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589377956613" />
+    <state width="958" height="286" key="GridCell.Tab.0.center/0.0.1920.1040/1920.605.1366.768@0.0.1920.1040" timestamp="1587726293793" />
+    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1589377956613">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589377956613" />
+    <state width="958" height="286" key="GridCell.Tab.0.left/0.0.1920.1040/1920.605.1366.768@0.0.1920.1040" timestamp="1587726293793" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1589377956613">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589377956613" />
+    <state width="958" height="286" key="GridCell.Tab.0.right/0.0.1920.1040/1920.605.1366.768@0.0.1920.1040" timestamp="1587726293793" />
+    <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1589375612442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589375612442" />
+    <state width="1876" height="342" key="GridCell.Tab.1.center" timestamp="1589375612442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="342" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589375612442" />
+    <state width="1876" height="342" key="GridCell.Tab.1.left" timestamp="1589375612442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="342" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589375612442" />
+    <state width="1876" height="342" key="GridCell.Tab.1.right" timestamp="1589375612442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="342" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589375612442" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589375551422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589375551422" />
+  </component>
+</project>
