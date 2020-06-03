@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/swe-ssa.iml" filepath="$PROJECT_DIR$/.idea/swe-ssa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HundeDressur6_Methodenaufrufe.iml" filepath="$PROJECT_DIR$/HundeDressur6_Methodenaufrufe.iml" />
     </modules>
   </component>
 </project>
