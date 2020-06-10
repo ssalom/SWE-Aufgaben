@@ -1,7 +1,7 @@
 public enum State {
     OPEN(1, "Open"),
     IN_PROGRESS(2, "In Progress"),
-    DONE(-2, "Done");
+    DONE(3, "Done");
 
     private final int value;
     private final String displayValue;
@@ -9,5 +9,9 @@ public enum State {
     private State(int stateCode, String displayValue) {
         this.value = stateCode;
         this.displayValue = displayValue;
+    }
+
+    public String getDisplayValue() {
+        return displayValue;
     }
 }

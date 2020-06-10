@@ -11,4 +11,7 @@ public enum Priority {
         this.displayValue = displayValue;
     }
 
+    public String getDisplayValue() {
+        return displayValue;
+    }
 }
