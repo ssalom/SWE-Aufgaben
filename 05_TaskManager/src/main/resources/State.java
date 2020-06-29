@@ -1,3 +1,5 @@
+package main.resources;
+
 public enum State {
     OPEN(1, "Open"),
     IN_PROGRESS(2, "In Progress"),

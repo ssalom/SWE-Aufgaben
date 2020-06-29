@@ -1,3 +1,9 @@
+package main.model;
+
+import main.service.TaskManagerService;
+import main.resources.Priority;
+import main.resources.State;
+
 public class Task {
     private int number;
     private String shortDescription;
@@ -7,7 +13,7 @@ public class Task {
 
     public Task(int number) {
         this.number = number;
-        TaskController.increaseTaskNumber();
+        TaskManagerService.getInstance().increaseTaskNumber();
     }
 
     public int getNumber() {

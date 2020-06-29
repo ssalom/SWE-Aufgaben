@@ -1,3 +1,5 @@
+package main.resources;
+
 public enum Priority {
     HIGH(1, "Hoch"),
     MEDIUM(2, "Mittel"),
