@@ -1,11 +1,13 @@
 package main.controller;
 
+import java.util.List;
 import main.model.MenuEntry;
 import main.model.Message;
 import main.model.Task;
 import main.resources.Messages;
 import main.service.MessageService;
 import main.service.TaskManagerService;
+import main.util.OutputUtilities;
 import main.util.TaskUtilities;
 
 import java.io.BufferedReader;
@@ -158,11 +160,22 @@ public class ConsoleController {
 
     private void displayMenu(ArrayList<MenuEntry> menuEntries) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        menuEntries.forEach((menuEntry) -> {
-            System.out.printf("|%-2d- %-30s|\n", menuEntry.getId(), menuEntry.getMessage());
+        List<String> headerList = new ArrayList<>();
+        List<List<String>> rows = new ArrayList<>();
+        OutputUtilities ou = new OutputUtilities();
 
+        headerList.add("Nr.");
+        headerList.add("Name");
+        menuEntries.forEach((menuEntry) -> {
+            //System.out.printf("|%-2d- %-30s|\n", menuEntry.getId(), menuEntry.getMessage());
+            List<String> col = new ArrayList<>();
+
+            col.add(Integer.toString(menuEntry.getId()));
+            col.add(menuEntry.getMessage());
+            rows.add(col);
         });
 
+        System.out.println(ou.generateTable(headerList, rows));
         System.out.println(
                 MessageService
                     .getInstance()
@@ -186,13 +199,49 @@ public class ConsoleController {
 
     private void displayTaskDetails(Task task) {
         //number, short Description, description, state, priority
-        System.out.printf("|%10d|%10s|%10s|%10s|%10s|\n", task.getNumber(), task.getShortDescription(), task.getDescription(), task.getState(), task.getPriority());
+        List<String> headerList = new ArrayList<>();
+        List<List<String>> rows = new ArrayList<>();
+        OutputUtilities ou = new OutputUtilities();
+        headerList.add(MessageService.getInstance().getMessageByKey("number").getMessage());
+        headerList.add(MessageService.getInstance().getMessageByKey("short_description").getMessage());
+        headerList.add(MessageService.getInstance().getMessageByKey("description").getMessage());
+        headerList.add(MessageService.getInstance().getMessageByKey("state").getMessage());
+        headerList.add(MessageService.getInstance().getMessageByKey("priority").getMessage());
+
+        List<String> col = new ArrayList<>();
+
+        col.add(Integer.toString(task.getNumber()));
+        col.add(task.getShortDescription());
+        col.add(task.getDescription());
+        col.add(task.getState());
+        col.add(task.getPriority());
+        rows.add(col);
+
+        System.out.println(ou.generateTable(headerList, rows));
+
+        //System.out.printf("|%10d|%10s|%10s|%10s|%10s|\n", task.getNumber(), task.getShortDescription(), task.getDescription(), task.getState(), task.getPriority());
     }
 
     private void displayTaskList(ArrayList<Task> taskList) {
+        List<String> headerList = new ArrayList<>();
+        List<List<String>> rows = new ArrayList<>();
+        OutputUtilities ou = new OutputUtilities();
+        headerList.add(MessageService.getInstance().getMessageByKey("number").getMessage());
+        headerList.add(MessageService.getInstance().getMessageByKey("short_description").getMessage());
+        headerList.add(MessageService.getInstance().getMessageByKey("state").getMessage());
+        headerList.add(MessageService.getInstance().getMessageByKey("priority").getMessage());
+
         taskList.forEach((Task task) -> {
-            System.out.printf("|%10d|%10s|%10s|%10s|\n", task.getNumber(), task.getShortDescription(), task.getState(), task.getPriority());
+            List<String> col = new ArrayList<>();
+            col.add(Integer.toString(task.getNumber()));
+            col.add(task.getShortDescription());
+            col.add(task.getState());
+            col.add(task.getPriority());
+            rows.add(col);
+            //System.out.printf("|%10d|%10s|%10s|%10s|\n", task.getNumber(), task.getShortDescription(), task.getState(), task.getPriority());
         });
+
+        System.out.println(ou.generateTable(headerList, rows));
     }
 
     private boolean isValidMenuEntry (int selection, ArrayList<MenuEntry> menuEntries) {

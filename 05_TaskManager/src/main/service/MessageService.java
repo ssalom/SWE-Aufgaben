@@ -16,6 +16,7 @@ public class MessageService {
         messages.add(new Message("no_task_found", "Gewählte Aufgabe nicht gefunden. Wählen Sie eine verfügbare."));
         messages.add(new Message("menu_selection", "Bitte wählen Sie einen Menu Eintrag in dem Sie eine entsprechenden Menu Nummer eingeben."));
         messages.add(new Message("wrong_menu_selection", "Falscher Menu Eintrag, bitte wählen Sie eine enstprechende Nummer."));
+        messages.add(new Message("number", "Nummer"));
         messages.add(new Message("short_description", "Kurzbeschreibung"));
         messages.add(new Message("description", "Beschreibung"));
         messages.add(new Message("priority", "Priorität (1 - Hoch, 2 - Medium, 3 - Niedrig)"));
