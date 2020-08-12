@@ -3,6 +3,7 @@ import ch.abbts.model.*;
 public class Main {
 
     public static void main(String[] args) {
+       // Model.workWithHW("Samuel");
         TouchSensor touch1 = new TouchSensor("Taste 1", 3);
         TouchSensor touch2 = new TouchSensor("Taste 2", 4);
         //TouchSensor touch1 = new TouchSensor();
@@ -23,5 +24,8 @@ public class Main {
         System.out.println("Vor Pressed...");
         touch1.waitForPressed();
         System.out.println("Nach Pressed...");
+
+
+        //Model.closeHW();
     }
 }

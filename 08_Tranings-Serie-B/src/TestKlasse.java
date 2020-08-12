@@ -38,18 +38,38 @@ public class TestKlasse {
         zuerich.yPosition = 131;
 
 
-        baden.anzeigen();
-        System.out.println("Baden befindet sich " + baden.rechneDistanz(zuerich) + " km von " + zuerich.name + " entfernt!");
+//        baden.anzeigen();
+//        System.out.println("Baden befindet sich " + baden.rechneDistanz(zuerich) + " km von " + zuerich.name + " entfernt!");
+//
+//        zeit1.anzeigen();
+//        zeit2.anzeigen();
+//
+//        System.out.println("Sekunden zeit1: " + zeit1.inSekunden());
+//        System.out.println("Sekunden zeit2: " + zeit2.inSekunden());
+//
+//        zeit1.add(zeit2).anzeigen();
+//
+//        System.out.println("Sekunden zeit1: " + zeit1.inSekunden());
+//        System.out.println("Sekunden zeit2: " + zeit2.inSekunden());
 
-        zeit1.anzeigen();
-        zeit2.anzeigen();
 
-        System.out.println("Sekunden zeit1: " + zeit1.inSekunden());
-        System.out.println("Sekunden zeit2: " + zeit2.inSekunden());
+        Route r1 = new Route();
 
-        zeit1.add(zeit2).anzeigen();
+        r1.add(genf);
+        r1.add(arrau);
+        r1.add(baden);
+        r1.add(zuerich);
+        r1.anzeigen();
 
-        System.out.println("Sekunden zeit1: " + zeit1.inSekunden());
-        System.out.println("Sekunden zeit2: " + zeit2.inSekunden());
+        System.out.println(genf.rechneDistanz(arrau));
+        System.out.println(arrau.rechneDistanz(baden));
+        System.out.println(baden.rechneDistanz(zuerich));
+
+
+        System.out.println("Distanz r1: " + r1.rechneDistanz());
+        r1.rechneReisezeit(100).anzeigen();
+        r1.rechneAnkunft(zeit1, 100).anzeigen();
+
+
     }
 }
