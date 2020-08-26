@@ -2,8 +2,6 @@ package main.service;
 
 import main.controller.ConsoleController;
 import main.model.Task;
-import main.resources.Messages;
-import main.util.TaskUtilities;
 
 import java.io.IOException;
 import java.util.ArrayList;

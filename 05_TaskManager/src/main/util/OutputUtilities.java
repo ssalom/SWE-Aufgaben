@@ -7,14 +7,14 @@ import java.util.Map;
 //Code copiert von https://stackoverflow.com/questions/2745206/output-in-a-table-format-in-javas-system-out
 public class OutputUtilities {
 
-  private final int PADDING_SIZE = 2;
-  private final String NEW_LINE = "\n";
-  private final String TABLE_JOINT_SYMBOL = "+";
-  private final String TABLE_V_LINE = "|";
-  private final String TABLE_H_LINE = "-";
-  private final int ROW_HEIGHT = 1;
+  private static final int PADDING_SIZE = 2;
+  private static final String NEW_LINE = "\n";
+  private static final String TABLE_JOINT_SYMBOL = "+";
+  private static final String TABLE_V_LINE = "|";
+  private static final String TABLE_H_LINE = "-";
+  private static final int ROW_HEIGHT = 1;
 
-  public String generateTable(List<String> headersList, List<List<String>> rowsList) {
+  public static String generateTable(List<String> headersList, List<List<String>> rowsList) {
     StringBuilder stringBuilder = new StringBuilder();
 
 
@@ -53,13 +53,13 @@ public class OutputUtilities {
     return stringBuilder.toString();
   }
 
-  private void fillSpace(StringBuilder stringBuilder, int length) {
+  private static void fillSpace(StringBuilder stringBuilder, int length) {
     for (int i = 0; i < length; i++) {
       stringBuilder.append(" ");
     }
   }
 
-  private void createRowLine(StringBuilder stringBuilder, int headersListSize,
+  private static void createRowLine(StringBuilder stringBuilder, int headersListSize,
       Map<Integer, Integer> columnMaxWidthMapping) {
     for (int i = 0; i < headersListSize; i++) {
       if (i == 0) {
@@ -74,7 +74,7 @@ public class OutputUtilities {
   }
 
 
-  private Map<Integer, Integer> getMaximumWidhtofTable(List<String> headersList,
+  private static Map<Integer, Integer> getMaximumWidhtofTable(List<String> headersList,
       List<List<String>> rowsList) {
     Map<Integer, Integer> columnMaxWidthMapping = new HashMap<>();
 
@@ -109,7 +109,7 @@ public class OutputUtilities {
     return columnMaxWidthMapping;
   }
 
-  private int getOptimumCellPadding(int cellIndex, int datalength,
+  private static int getOptimumCellPadding(int cellIndex, int datalength,
       Map<Integer, Integer> columnMaxWidthMapping, int cellPaddingSize) {
     if (datalength % 2 != 0) {
       datalength++;
@@ -122,7 +122,7 @@ public class OutputUtilities {
     return cellPaddingSize;
   }
 
-  private void fillCell(StringBuilder stringBuilder, String cell, int cellIndex,
+  private static void fillCell(StringBuilder stringBuilder, String cell, int cellIndex,
       Map<Integer, Integer> columnMaxWidthMapping) {
 
     int cellPaddingSize = getOptimumCellPadding(cellIndex, cell.length(), columnMaxWidthMapping,

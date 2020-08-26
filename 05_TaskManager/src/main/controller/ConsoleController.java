@@ -2,9 +2,7 @@ package main.controller;
 
 import java.util.List;
 import main.model.MenuEntry;
-import main.model.Message;
 import main.model.Task;
-import main.resources.Messages;
 import main.service.MessageService;
 import main.service.TaskManagerService;
 import main.util.OutputUtilities;
@@ -13,7 +11,6 @@ import main.util.TaskUtilities;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class ConsoleController {
@@ -162,7 +159,7 @@ public class ConsoleController {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         List<String> headerList = new ArrayList<>();
         List<List<String>> rows = new ArrayList<>();
-        OutputUtilities ou = new OutputUtilities();
+
 
         headerList.add("Nr.");
         headerList.add("Name");
@@ -175,7 +172,7 @@ public class ConsoleController {
             rows.add(col);
         });
 
-        System.out.println(ou.generateTable(headerList, rows));
+        System.out.println(OutputUtilities.generateTable(headerList, rows));
         System.out.println(
                 MessageService
                     .getInstance()
@@ -201,7 +198,6 @@ public class ConsoleController {
         //number, short Description, description, state, priority
         List<String> headerList = new ArrayList<>();
         List<List<String>> rows = new ArrayList<>();
-        OutputUtilities ou = new OutputUtilities();
         headerList.add(MessageService.getInstance().getMessageByKey("number").getMessage());
         headerList.add(MessageService.getInstance().getMessageByKey("short_description").getMessage());
         headerList.add(MessageService.getInstance().getMessageByKey("description").getMessage());
@@ -217,7 +213,7 @@ public class ConsoleController {
         col.add(task.getPriority());
         rows.add(col);
 
-        System.out.println(ou.generateTable(headerList, rows));
+        System.out.println(OutputUtilities.generateTable(headerList, rows));
 
         //System.out.printf("|%10d|%10s|%10s|%10s|%10s|\n", task.getNumber(), task.getShortDescription(), task.getDescription(), task.getState(), task.getPriority());
     }
@@ -225,7 +221,6 @@ public class ConsoleController {
     private void displayTaskList(ArrayList<Task> taskList) {
         List<String> headerList = new ArrayList<>();
         List<List<String>> rows = new ArrayList<>();
-        OutputUtilities ou = new OutputUtilities();
         headerList.add(MessageService.getInstance().getMessageByKey("number").getMessage());
         headerList.add(MessageService.getInstance().getMessageByKey("short_description").getMessage());
         headerList.add(MessageService.getInstance().getMessageByKey("state").getMessage());
@@ -241,7 +236,7 @@ public class ConsoleController {
             //System.out.printf("|%10d|%10s|%10s|%10s|\n", task.getNumber(), task.getShortDescription(), task.getState(), task.getPriority());
         });
 
-        System.out.println(ou.generateTable(headerList, rows));
+        System.out.println(OutputUtilities.generateTable(headerList, rows));
     }
 
     private boolean isValidMenuEntry (int selection, ArrayList<MenuEntry> menuEntries) {
@@ -258,13 +253,13 @@ public class ConsoleController {
     public Task getAddTaskDialog(Task task) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.printf("%s: ", Messages.SHORT_DESCRIPTION.getMessage());
+        System.out.printf("%s: ", MessageService.getInstance().getMessageByKey("short_description").getMessage());
         task.setShortDescription(reader.readLine());
 
-        System.out.printf("%s: ", Messages.DESCRIPTION.getMessage());
+        System.out.printf("%s: ", MessageService.getInstance().getMessageByKey("description").getMessage());
         task.setDescription(reader.readLine());
 
-        System.out.printf("%s: ", Messages.PRIORITY.getMessage());
+        System.out.printf("%s: ", MessageService.getInstance().getMessageByKey("priority").getMessage());
         task.setPriority(Integer.parseInt(reader.readLine()));
 
         return task;
