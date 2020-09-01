@@ -5,8 +5,8 @@ public enum State {
     IN_PROGRESS(2, "In Progress"),
     DONE(3, "Done");
 
-    private final int value;
-    private final String displayValue;
+    private int value;
+    private String displayValue;
 
     private State(int stateCode, String displayValue) {
         this.value = stateCode;

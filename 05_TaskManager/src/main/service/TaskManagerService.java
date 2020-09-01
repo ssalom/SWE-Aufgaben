@@ -8,11 +8,11 @@ import java.util.ArrayList;
 
 public class TaskManagerService {
     private static final TaskManagerService tc = new TaskManagerService();
-    private static int taskNumber = 1;
-    private static ArrayList<Task> tasks = new ArrayList<>();
+    private int taskNumber = 1;
+    private ArrayList<Task> tasks = new ArrayList<>();
 
     private TaskManagerService() {
-        System.out.println(MessageService.getInstance().getMessageByKey("start").getMessage());
+        //System.out.println(MessageService.getInstance().getMessageByKey("start").getMessage());
     }
 
     public static TaskManagerService getInstance() {
