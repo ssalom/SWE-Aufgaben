@@ -3,6 +3,7 @@ package main.model;
 import main.service.TaskManagerService;
 import main.resources.Priority;
 import main.resources.State;
+import main.util.OutputUtilities;
 
 public class Task {
     private int number;
