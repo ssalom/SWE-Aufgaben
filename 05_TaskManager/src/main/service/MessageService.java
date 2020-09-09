@@ -49,9 +49,5 @@ public class MessageService {
                 .findAny()
                 .orElse(null);
     }
-
-    private void setMessage (Message message) {
-        messages.add(message);
-    }
 }
 
