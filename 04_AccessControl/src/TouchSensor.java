@@ -1,15 +1,12 @@
 import ch.abbts.model.*;
 
-class TouchSensor {
-    private String name;
-    private int port;
+class TouchSensor extends Sensor {
 
     public TouchSensor(String name, int port) {
-        setName(name);
-        setPort(port);
+        super(name, port);
     }
 
-    private boolean isPressed() {
+    public boolean isPressed() {
         return Model.in.isPressed(this.port);
     }
 
@@ -19,29 +16,8 @@ class TouchSensor {
         }
     }
 
-
+    @Override
     public String toString() {
-        return this.getName() + "  am Port " + this.getPort();
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getPort() {
-        return port;
-    }
-
-    public void setPort(int port) {
-        if (port >= 1 && port <=4) {
-            this.port = port;
-        } else {
-            System.out.println(port + " ungültige Portnummer");
-            System.exit(1);
-        }
+        return name + "  am Port " + port;
     }
 }
