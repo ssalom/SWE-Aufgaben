@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+<<<<<<< HEAD
+  <component name="ChangeListManager">
+    <list default="true" id="fd9f5cca-834e-47b4-8c96-a3a2faf354ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+=======
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5534e0f8-248c-4be6-80a8-6916e576aa89" name="Default Changelist" comment="" />
+>>>>>>> f17bba368d6ca63292c28bdd88fdd9c00c984cee
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+<<<<<<< HEAD
+=======
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../ExMan_2_Item_2\exportToHTML" />
+  </component>
+>>>>>>> f17bba368d6ca63292c28bdd88fdd9c00c984cee
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+<<<<<<< HEAD
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1aXrmzzjeoInYXY1dzWcboL88u6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+=======
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1cGeWP73sliR3iEZJuHAv9D5BsW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> f17bba368d6ca63292c28bdd88fdd9c00c984cee
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+<<<<<<< HEAD
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ExMan_1_CLI" />
+=======
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ExpeditionManagerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExpeditionManagerApp" />
+      <module name="ExMan_2_Item_2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+>>>>>>> f17bba368d6ca63292c28bdd88fdd9c00c984cee
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+<<<<<<< HEAD
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+=======
+        <item itemvalue="Application.ExpeditionManagerApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+>>>>>>> f17bba368d6ca63292c28bdd88fdd9c00c984cee
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
+      <changelist id="fd9f5cca-834e-47b4-8c96-a3a2faf354ea" name="Default Changelist" comment="" />
+      <created>1586892942852</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586892942852</updated>
+    </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1586892969271</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586892969271</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial">
+      <created>1586893129066</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586893129066</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- setup main class&#10;- setup Gegenstand klasse um gegenstände zu erfassen">
+      <created>1586893578790</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586893578790</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- create menu and user input for menu and menu entry 1">
+      <created>1586899465505</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586899465505</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <MESSAGE value="- setup main class&#10;- setup Gegenstand klasse um gegenstände zu erfassen" />
+    <MESSAGE value="- create menu and user input for menu and menu entry 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="- create menu and user input for menu and menu entry 1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1586893212902">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586893212902" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1586893515727">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586893515727" />
+    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1586899464585">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586899464585" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1586986875503">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586986875503" />
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586949351993" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1586986875503">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586986875503" />
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586949351993" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1586986875503">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586986875503" />
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586949351993" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1586986875503">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586986875503" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586949351993" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1586899467474">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586899467474" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586897578450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1586897578450" />
+=======
+      <changelist id="5534e0f8-248c-4be6-80a8-6916e576aa89" name="Default Changelist" comment="" />
+      <created>1590159387144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590159387144</updated>
+      <workItem from="1598453603316" duration="3820000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="573" y="95" key="#com.intellij.ide.util.MemberChooser" timestamp="1598453802909">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="573" y="95" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598453802909" />
+    <state x="463" y="84" key="FileChooserDialogImpl" timestamp="1590159861397">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="84" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590159861397" />
+    <state width="1491" height="30" key="GridCell.Tab.0.bottom" timestamp="1598512572295">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1491" height="30" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1598456208292">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="30" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1536.824@0.0.1536.824" timestamp="1598456208292" />
+    <state width="1367" height="310" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590165259798" />
+    <state width="1491" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598456160395" />
+    <state width="1491" height="30" key="GridCell.Tab.0.bottom/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1598512572295" />
+    <state width="1491" height="30" key="GridCell.Tab.0.center" timestamp="1598512572292">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1491" height="30" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1598456208291">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="30" key="GridCell.Tab.0.center.inPresentationMode/0.0.1536.824@0.0.1536.824" timestamp="1598456208291" />
+    <state width="1367" height="310" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590165259798" />
+    <state width="1491" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598456160395" />
+    <state width="1491" height="30" key="GridCell.Tab.0.center/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1598512572292" />
+    <state width="1491" height="30" key="GridCell.Tab.0.left" timestamp="1598512572288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1491" height="30" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1598456208291">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="30" key="GridCell.Tab.0.left.inPresentationMode/0.0.1536.824@0.0.1536.824" timestamp="1598456208291" />
+    <state width="1367" height="310" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590165259798" />
+    <state width="1491" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598456160394" />
+    <state width="1491" height="30" key="GridCell.Tab.0.left/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1598512572288" />
+    <state width="1491" height="30" key="GridCell.Tab.0.right" timestamp="1598512572293">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1491" height="30" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1598456208292">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="30" key="GridCell.Tab.0.right.inPresentationMode/0.0.1536.824@0.0.1536.824" timestamp="1598456208292" />
+    <state width="1367" height="310" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590165259798" />
+    <state width="1491" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598456160395" />
+    <state width="1491" height="30" key="GridCell.Tab.0.right/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1598512572293" />
+    <state x="350" y="69" width="949" height="590" key="NewModule_or_Project.wizard" timestamp="1590159881029">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="350" y="69" width="949" height="590" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1590159881029" />
+    <state x="183" y="0" key="SettingsEditor" timestamp="1598456202200">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590160792725" />
+    <state x="183" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598456202200" />
+    <state x="229" y="0" key="SettingsEditor/0.0.1920.1040/1920.605.1366.768@0.0.1920.1040" timestamp="1590580569003" />
+    <state width="638" height="677" key="SwitcherDM.inPresentationMode" timestamp="1598456717996">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="638" height="677" key="SwitcherDM.inPresentationMode/0.0.1536.824@0.0.1536.824" timestamp="1598456717996" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598456208282">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="94" y="-2" width="1344" height="2556" key="search.everywhere.popup.inPresentationMode" timestamp="1598456827321">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="94" y="-2" width="1344" height="2556" key="search.everywhere.popup.inPresentationMode/0.0.1536.824@0.0.1536.824" timestamp="1598456827321" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598456208282" />
+>>>>>>> f17bba368d6ca63292c28bdd88fdd9c00c984cee
+  </component>
+</project>

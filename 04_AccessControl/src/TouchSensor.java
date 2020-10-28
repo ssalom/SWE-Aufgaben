@@ -1,37 +1,23 @@
 import ch.abbts.model.*;
 
-public class TouchSensor {
-    String name;
-    int port;
+class TouchSensor extends Sensor {
 
     public TouchSensor(String name, int port) {
-        this.name = name;
-        this.port = port;
+        super(name, port);
     }
 
-    boolean isPressed() {
+    public boolean isPressed() {
         return Model.in.isPressed(this.port);
     }
 
-    void waitForPressed() {
+    public void waitForPressed() {
         while (!isPressed()) {
             Util.delay(100);
         }
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getPort() {
-        return port;
-    }
-
-    public void setPort(int port) {
-        this.port = port;
+    @Override
+    public String toString() {
+        return name + "  am Port " + port;
     }
 }
