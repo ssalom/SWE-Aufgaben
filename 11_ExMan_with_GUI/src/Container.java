@@ -29,6 +29,10 @@ public class Container {
         return items.get(index);
     }
 
+    public void clearContainer () {
+        items = new ArrayList<>();
+    }
+
     public int size() {
         return items.size();
     }
