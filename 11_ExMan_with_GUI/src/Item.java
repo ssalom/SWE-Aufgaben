@@ -7,7 +7,7 @@
  * Die Klasse Item bildet einen Gegenstand ab.
  */
 
-class Item {
+public class Item {
   private String name;
   private int weight;
   private int profit;

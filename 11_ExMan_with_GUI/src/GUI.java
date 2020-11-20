@@ -1,31 +1,32 @@
 import com.sun.java.accessibility.util.AccessibilityListenerList;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import javafx.util.Callback;
-
-
-import javax.swing.text.html.Option;
-import java.beans.beancontext.BeanContext;
 import java.util.Optional;
+
 public class GUI extends Application {
+    private SimpleSelectionEngine engine = new SimpleSelectionEngine();
+    private Container allItems = new Container("Sibirien");
+    private int limit;
+    private Label statusLbl = new Label();
+    private Stage stage;
+    private ObservableList<Item> selectedItemsModel =  FXCollections.observableArrayList();
+    private ObservableList allItemsModel =  FXCollections.observableArrayList();
+
     public static void main (String[] args) {
 
         launch(args);
     }
 
-    private SimpleSelectionEngine engine = new SimpleSelectionEngine();
-    private Container allItems = new Container("Sibirien");
-    private int limit;
-    private Label statusLbl = new Label();
-    private VBox appContent = new VBox();
-    private Stage stage;
-
     public void start (Stage stage) {
         this.stage = stage;
-        Scene scene = new Scene(createRoot(), 260, 180);
+        Scene scene = new Scene(createRoot(), 550, 400);
         stage.setScene(scene);
         setTitle("ExMan");
         stage.show();
@@ -37,10 +38,10 @@ public class GUI extends Application {
 
     private BorderPane createRoot () {
         BorderPane root = new BorderPane();
-
         root.setTop(createMenu());
-        root.setBottom(statusLbl);
-        root.setCenter(appContent);
+        root.setLeft(createTable());
+        root.setRight(createList());
+        root.setBottom(createStatus());
         return root;
     }
 
@@ -53,16 +54,16 @@ public class GUI extends Application {
 
         openMI.setOnAction(e -> open());
         saveMI.setOnAction(e -> saveAs());
+        closeMI.setOnAction(e -> exit());
 
         fileMenu.getItems().addAll(openMI, saveMI, closeMI);
-
 
         Menu editMenu = new Menu("Bearbeiten");
         MenuItem addItemMI = new MenuItem("Gegenstand hinzufügen...");
         MenuItem setLimitMI = new MenuItem("Limit setzten...");
 
         addItemMI.setOnAction(e -> add());
-        setLimitMI.setOnAction(e -> setLimit(2));
+        setLimitMI.setOnAction(e -> setLimit());
 
         editMenu.getItems().addAll(addItemMI, setLimitMI);
 
@@ -70,14 +71,39 @@ public class GUI extends Application {
         MenuItem simplePackageMI = new MenuItem("Simple");
         packageMenu.getItems().addAll(simplePackageMI);
 
-        simplePackageMI.setOnAction(e -> pack(allItems, limit));
+        simplePackageMI.setOnAction(e -> pack());
 
         menuBar.getMenus().addAll(fileMenu, editMenu, packageMenu);
         return menuBar;
     }
 
-    private void createStatus () {
-        statusLbl = new Label("Status");
+    private TableView createTable () {
+        TableView tableView = new TableView();
+
+        TableColumn name = new TableColumn("Name");
+        name.setCellValueFactory(new PropertyValueFactory<>("name"));
+
+        TableColumn weight = new TableColumn("Gewicht [kg]");
+        weight.setCellValueFactory(new PropertyValueFactory<>("weight"));
+
+        TableColumn profit = new TableColumn("Profit [CHF]");
+        profit.setCellValueFactory(new PropertyValueFactory<>("profit"));
+
+        tableView.getColumns().addAll(name, weight, profit);
+
+        tableView.setItems(allItemsModel);
+
+        return tableView;
+    }
+
+    private ListView createList () {
+        ListView listView = new ListView<Item>(selectedItemsModel);
+        return listView;
+    }
+
+    private Label createStatus () {
+        setStatus("Status");
+        return statusLbl;
     }
 
     private void open () {
@@ -86,64 +112,53 @@ public class GUI extends Application {
         allItems.addItem(new Item("Pickel", 1, 15));
         allItems.addItem(new Item("Sonde", 4, 100));
         allItems.addItem(new Item("Schlitten", 50, 1000));
-        appContent.getChildren().clear();
-        appContent.getChildren().add(new Label(allItems.toString()));
+
+        setStatus("Vordefinierter Container wurde erstellt.");
+        allItemsModel.clear();
+        allItemsModel.addAll(allItems.getItems());
     }
 
     private void saveAs () {
-        statusLbl.setText("Speichern nocht nicht implementiert.");
+        setStatus("Speichern nocht nicht implementiert.");
 
     }
 
     private void add () {
-        Dialog<Item> dialog = new Dialog<>();
-        dialog.setTitle("Gegenstand hinzufügen");
-        dialog.setHeaderText("Bitter füllen Sie die unterstehenden Felder entsprechend aus.");
+        ItemDialog inputDialog = new ItemDialog();
 
-
-        GridPane gpane = new GridPane();
-        TextField txtName = new TextField();
-        TextField txtWeight = new TextField();
-        TextField txtProfit = new TextField();
-
-        gpane.add(new Label("Name: "), 1 , 1);
-        gpane.add(txtName, 2, 1);
-        gpane.add(new Label("Gewicht: "), 1, 2);
-        gpane.add(txtWeight, 2, 2);
-        gpane.add(new Label("Profit: "), 1, 3);
-        gpane.add(txtProfit, 2,3);
-
-        ButtonType buttonTypeSubmit = new ButtonType("Submit", ButtonBar.ButtonData.OK_DONE);
-        dialog.getDialogPane().getButtonTypes().add(buttonTypeSubmit);
-
-        dialog.getDialogPane().setContent(gpane);
-        dialog.setResultConverter(new Callback<ButtonType, Item>() {
-            @Override
-            public Item call(ButtonType b) {
-                if (b == buttonTypeSubmit) {
-
-                    return new Item(txtName.getText(), Integer.parseInt(txtWeight.getText()), Integer.parseInt(txtProfit.getText()));
-                }
-
-                return null;
-            }
-        });
-        Optional<Item> result = dialog.showAndWait();
+        Optional<Item> result = inputDialog.showAndWait();
         if(result.isPresent()) {
             allItems.addItem(result.get());
-            appContent.getChildren().clear();
-            appContent.getChildren().add(new Label(allItems.toString()));
+            allItemsModel.add(result.get());
         }
     }
 
-    private void setLimit (int limit) {
-        this.limit = limit;
+    private void setLimit () {
+        TextInputDialog limitDialog = new TextInputDialog();
+
+        Optional<String> result = limitDialog.showAndWait();
+        this.limit = Integer.parseInt(result.get());
     }
 
-    public void pack (Container container, int limit) {
-        allItems = engine.pack(container, limit);
-        appContent.getChildren().clear();
-        appContent.getChildren().add(new Label(allItems.toString()));
+    private void pack () {
+        if(limit == 0) {
+            setLimit();
+        }
+        allItems = engine.pack(allItems, limit);
+        setStatus("Container wurde gepackt.");
+
+        selectedItemsModel.addAll(allItems.getItems());
     }
+
+    private void exit () {
+        System.exit(0);
+    }
+
+    private void setStatus (String message) {
+        statusLbl.setText(message);
+    }
+
+
+
 
 }
