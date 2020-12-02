@@ -1,8 +1,12 @@
 import com.sun.java.accessibility.util.AccessibilityListenerList;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.scene.Scene;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.ScatterChart;
+import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.*;
@@ -18,6 +22,7 @@ public class GUI extends Application {
     private Stage stage;
     private ObservableList<Item> selectedItemsModel =  FXCollections.observableArrayList();
     private ObservableList allItemsModel =  FXCollections.observableArrayList();
+    private ObservableList<XYChart.Series<Number, Number>> chartData = FXCollections.observableArrayList();
 
     public static void main (String[] args) {
 
@@ -40,6 +45,7 @@ public class GUI extends Application {
         BorderPane root = new BorderPane();
         root.setTop(createMenu());
         root.setLeft(createTable());
+        root.setCenter(getScatterChart());
         root.setRight(createList());
         root.setBottom(createStatus());
         return root;
@@ -106,16 +112,45 @@ public class GUI extends Application {
         return statusLbl;
     }
 
+    private void updateChartData (Container container) {
+        chartData.clear();
+        for (Item item : container.getItems()) {
+            XYChart.Series series = new XYChart.Series();
+            XYChart.Data<Number, Number>  data = new XYChart.Data<>(item.getWeight(), item.getProfit());
+            data.setNode(createDataPointLabel(item.getName()));
+            series.getData().add(data);
+            chartData.add(series);
+        }
+    }
+
+    private Label createDataPointLabel (String labelName) {
+        Label label = new Label();
+        label.setText(labelName);
+        return label;
+    }
+
+    private ScatterChart<Number, Number> getScatterChart () {
+            NumberAxis xAxis = new NumberAxis();
+            NumberAxis yAxis = new NumberAxis();
+
+            xAxis.setLabel("Gewicht");
+            yAxis.setLabel("Profit");
+            ScatterChart<Number, Number> chart = new ScatterChart<>(xAxis, yAxis);
+            chart.setData(chartData);
+        return chart;
+    }
+
     private void open () {
         allItems.clearContainer();
-        allItems.addItem(new Item("Schaufel", 2, 10));
-        allItems.addItem(new Item("Pickel", 1, 15));
-        allItems.addItem(new Item("Sonde", 4, 100));
-        allItems.addItem(new Item("Schlitten", 50, 1000));
+        allItems.addItem(new Item("Schaufel", 10, 100));
+        allItems.addItem(new Item("Pickel", 5, 200));
+        allItems.addItem(new Item("Sonde", 4, 400));
+        allItems.addItem(new Item("Schlitten", 15, 1000));
 
         setStatus("Vordefinierter Container wurde erstellt.");
         allItemsModel.clear();
         allItemsModel.addAll(allItems.getItems());
+        updateChartData(allItems);
     }
 
     private void saveAs () {
@@ -131,6 +166,7 @@ public class GUI extends Application {
             allItems.addItem(result.get());
             allItemsModel.add(result.get());
         }
+        updateChartData(allItems);
     }
 
     private void setLimit () {
